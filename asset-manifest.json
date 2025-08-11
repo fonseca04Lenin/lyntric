@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lyntric/static/css/main.ce6012e8.css",
+    "main.js": "/lyntric/static/js/main.ee4433eb.js",
+    "index.html": "/lyntric/index.html",
+    "main.ce6012e8.css.map": "/lyntric/static/css/main.ce6012e8.css.map",
+    "main.ee4433eb.js.map": "/lyntric/static/js/main.ee4433eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce6012e8.css",
+    "static/js/main.ee4433eb.js"
+  ]
+}
