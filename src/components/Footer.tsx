@@ -94,9 +94,9 @@ const Footer: React.FC = () => {
               © 2024 Lyntric. Built for builders, by builders.
             </p>
             <div className="flex space-x-6 text-sm text-gray-500">
-              <a href="#" className="hover:text-white transition-colors">Privacy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms</a>
-              <a href="#" className="hover:text-white transition-colors">Contact</a>
+              <button className="hover:text-white transition-colors">Privacy</button>
+              <button className="hover:text-white transition-colors">Terms</button>
+              <button className="hover:text-white transition-colors">Contact</button>
             </div>
           </div>
         </motion.div>
