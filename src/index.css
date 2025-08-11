@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #a3a3a3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.section-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.section-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
