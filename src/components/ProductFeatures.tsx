@@ -92,7 +92,7 @@ const ProductFeatures: React.FC = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8">
             <span className="gradient-text">PRODUCT OVERVIEW</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Every feature is precision-built for execution. No unnecessary complexity, 
             just the tools you need to build faster and better—together.
           </p>
@@ -113,25 +113,29 @@ const ProductFeatures: React.FC = () => {
                 <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white">
                   {feature.title}
                 </h3>
-                <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                <p className="text-lg text-white mb-8 leading-relaxed">
                   {feature.description}
                 </p>
                 
                 <div className="space-y-3">
                   {feature.highlights.map((highlight, highlightIndex) => (
                     <div key={highlightIndex} className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-white mt-2 flex-shrink-0" />
-                      <p className="text-gray-400 text-sm">{highlight}</p>
+                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-2 flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="text-white text-sm">{highlight}</p>
                     </div>
                   ))}
                 </div>
               </div>
               
               <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                <div className="border border-gray-800 p-8 h-64 flex items-center justify-center">
+                <div className="border border-gray-800 p-8 h-64 flex items-center justify-center rounded-xl">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-white to-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 text-sm">Feature Preview</p>
+                    <p className="text-white text-sm">Feature Preview</p>
                   </div>
                 </div>
               </div>
@@ -148,12 +152,12 @@ const ProductFeatures: React.FC = () => {
           <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white">
             Built for Motion, Not Stagnation
           </h3>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-white max-w-3xl mx-auto mb-8">
             Every tool, every interaction, every feature is designed with one goal: 
             to accelerate execution and eliminate friction in the building process.
           </p>
-          <button className="bg-white text-black px-8 py-4 text-lg font-semibold hover-glow transition-all duration-300">
-            Experience Lyntric
+          <button className="bg-white text-black px-8 py-4 text-lg font-semibold hover-glow transition-all duration-300 rounded-xl">
+            Request Invitation
           </button>
         </motion.div>
       </div>

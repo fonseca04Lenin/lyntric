@@ -50,14 +50,14 @@ const Vision: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="space-y-6 text-lg leading-relaxed">
-              <p className="text-gray-300">
+              <p className="text-white">
                 The noise is deafening. Endless feeds, empty engagement, and performative 
                 success have drained the energy out of modern digital platforms.
               </p>
               <p className="text-white font-medium">
                 Founders are tired, builders are buried, and creatives are lost in algorithmic clutter.
               </p>
-              <p className="text-gray-300">
+              <p className="text-white">
                 Lyntric exists to restore the signal in this chaos. It is not just another 
                 platform—it is a precision-built, invite-only operating system for high-performing 
                 entrepreneurs and world-class creative talent.
@@ -74,24 +74,24 @@ const Vision: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-8"
           >
-            <div className="border border-gray-800 p-8">
+            <div className="border border-gray-800 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-4 text-white">PURPOSE-DRIVEN</h3>
-              <p className="text-gray-400">
+              <p className="text-white">
                 Every feature, user, and interaction has a purpose. This is a new standard 
                 where connections are intentional.
               </p>
             </div>
 
-            <div className="border border-gray-800 p-8">
+            <div className="border border-gray-800 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-4 text-white">COLLABORATION FOCUSED</h3>
-              <p className="text-gray-400">
+              <p className="text-white">
                 Collaboration is instantaneous, and ventures are born, not browsed.
               </p>
             </div>
 
-            <div className="border border-gray-800 p-8">
+            <div className="border border-gray-800 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-4 text-white">VELOCITY ENABLED</h3>
-              <p className="text-gray-400">
+              <p className="text-white">
                 The antidote to noise, the return of utility, and the reawakening of velocity.
               </p>
             </div>

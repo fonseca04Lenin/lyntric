@@ -29,20 +29,12 @@ const Mission: React.FC = () => {
 
   const principles = [
     {
-      title: "UTILITY IS THE NEW STATUS",
-      description: "Lyntric is not about likes, follows, or flexes—it's about action. Value flows from what you do, not how you're perceived."
-    },
-    {
       title: "TRUST BY DESIGN",
       description: "We design for trust because you can't build with strangers. Every user is vetted, every connection intentional."
     },
     {
       title: "SPEED WINS",
       description: "Founders move fast, and Lyntric moves faster. Real-time rooms, instant matching, and a clutter-free interface built for motion."
-    },
-    {
-      title: "EXCLUSIVITY AS A FEATURE",
-      description: "We don't scale users, we scale outcomes. Growth is intentional and scarcity is the soil of quality."
     },
     {
       title: "BUILDERS NEED BUILDERS",
@@ -63,10 +55,10 @@ const Mission: React.FC = () => {
             <span className="gradient-text">THE MISSION</span>
           </h2>
           <div className="max-w-4xl mx-auto">
-            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-8">
+            <p className="text-xl md:text-2xl text-white leading-relaxed mb-8">
               Our mission is audacious yet clear: <span className="text-white font-semibold">unify the fragmented world of execution.</span>
             </p>
-            <p className="text-lg text-gray-400 leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
               We aim to create a digital environment so pure, so focused, and so empowering 
               that founders and creatives can't help but build better and faster—together. 
               There are no unnecessary features, no artificial engagement loops, just a raw 
@@ -92,12 +84,12 @@ const Mission: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, delay: 0.1 * index }}
-                className="border border-gray-800 p-6 hover:border-gray-600 transition-colors duration-300"
+                className="border border-gray-800 p-6 hover:border-gray-600 transition-colors duration-300 rounded-xl"
               >
                 <h4 className="text-lg font-bold mb-4 text-white">
                   {principle.title}
                 </h4>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-white text-sm leading-relaxed">
                   {principle.description}
                 </p>
               </motion.div>
@@ -111,30 +103,30 @@ const Mission: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center"
         >
-          <div className="border border-gray-700 p-8 md:p-12 max-w-4xl mx-auto">
+          <div className="border border-gray-700 p-8 md:p-12 max-w-4xl mx-auto rounded-xl">
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white">
               WHO WE SERVE
             </h3>
             <div className="grid md:grid-cols-2 gap-8 text-left">
               <div>
                 <h4 className="text-lg font-semibold mb-3 text-white">The Founder</h4>
-                <p className="text-gray-400 text-sm mb-4">
+                <p className="text-white text-sm mb-4">
                   A visionary, resourceful, and signal-obsessed individual who is tired of talking and ready to build.
                 </p>
                 
                 <h4 className="text-lg font-semibold mb-3 text-white">The Creative Operator</h4>
-                <p className="text-gray-400 text-sm">
+                <p className="text-white text-sm">
                   The storyteller, visual thinker, and brand architect. The overlooked builders behind world-changing startups.
                 </p>
               </div>
               <div>
                 <h4 className="text-lg font-semibold mb-3 text-white">The Technical Genius</h4>
-                <p className="text-gray-400 text-sm mb-4">
+                <p className="text-white text-sm mb-4">
                   Someone who sees code as poetry and time as currency. Deeply skilled and selectively social.
                 </p>
                 
                 <h4 className="text-lg font-semibold mb-3 text-white">The Early-Stage Investor</h4>
-                <p className="text-gray-400 text-sm">
+                <p className="text-white text-sm">
                   Not interested in endless pitch decks but craves proximity to bold action, elite talent, and raw dealflow.
                 </p>
               </div>
