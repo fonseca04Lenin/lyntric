@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                 alt="Lyntric Logo" 
                 className="w-10 h-10 rounded object-contain"
               />
-              <h3 className="text-2xl font-bold gradient-text">LYNTRIC</h3>
+              <h3 className="text-2xl font-bold text-white">LYNTRIC</h3>
             </div>
             <p className="text-white text-sm">
               The Future of Entrepreneurial Connection

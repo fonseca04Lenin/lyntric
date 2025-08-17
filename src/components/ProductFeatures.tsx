@@ -90,7 +90,7 @@ const ProductFeatures: React.FC = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8">
-            <span className="gradient-text">PRODUCT OVERVIEW</span>
+            <span className="text-white">PRODUCT OVERVIEW</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Every feature is precision-built for execution. No unnecessary complexity, 
@@ -119,8 +119,8 @@ const ProductFeatures: React.FC = () => {
                 
                 <div className="space-y-3">
                   {feature.highlights.map((highlight, highlightIndex) => (
-                    <div key={highlightIndex} className="flex items-start space-x-3">
-                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-2 flex-shrink-0">
+                    <div key={highlightIndex} className="flex items-center space-x-3">
+                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
                         <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>

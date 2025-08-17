@@ -52,7 +52,7 @@ const Mission: React.FC = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8">
-            <span className="gradient-text">THE MISSION</span>
+            <span className="text-white">THE MISSION</span>
           </h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-xl md:text-2xl text-white leading-relaxed mb-8">

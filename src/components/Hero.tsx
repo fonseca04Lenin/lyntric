@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.5, delay: 0.8, ease: "easeInOut" }}
-                className="gradient-text"
+                className="text-white"
               >
                 LYNTRIC
               </motion.span>

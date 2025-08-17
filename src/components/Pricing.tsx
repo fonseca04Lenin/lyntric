@@ -37,7 +37,7 @@ const Pricing: React.FC = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8">
-            <span className="gradient-text">THE FIRST 500</span>
+            <span className="text-white">THE FIRST 500</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
             We believe how you start determines how you grow. Lyntric launches with an 

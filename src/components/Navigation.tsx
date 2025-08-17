@@ -41,7 +41,7 @@ const Navigation: React.FC = () => {
               alt="Lyntric Logo" 
               className="w-12 h-12 md:w-16 md:h-16 rounded object-contain"
             />
-            <h1 className="text-xl md:text-2xl font-bold gradient-text -ml-2 md:-ml-4">LYNTRIC</h1>
+            <h1 className="text-xl md:text-2xl font-bold text-white -ml-2 md:-ml-4">LYNTRIC</h1>
           </div>
           
           {/* Desktop Navigation */}

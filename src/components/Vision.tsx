@@ -37,7 +37,7 @@ const Vision: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6">
-            <span className="gradient-text">THE VISION THAT</span>
+            <span className="text-white">THE VISION THAT</span>
             <br />
             <span className="text-white">CHANGES EVERYTHING</span>
           </h2>
