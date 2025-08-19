@@ -60,14 +60,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 1.2 }}
           className="mb-12"
         >
-          <motion.p 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.4 }}
-            className="hidden md:block text-lg md:text-xl font-medium text-white mb-8 max-w-2xl mx-auto"
-          >
-            "If you're into tech, then you're into Lyntric."
-          </motion.p>
+
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
