@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/lyntric/static/css/main.d54fd457.css",
-    "main.js": "/lyntric/static/js/main.82827c4b.js",
+    "main.css": "/lyntric/static/css/main.518df9e7.css",
+    "main.js": "/lyntric/static/js/main.ef24da12.js",
     "static/media/logo.png": "/lyntric/static/media/logo.332080213e4e3d829d2a.png",
     "index.html": "/lyntric/index.html",
-    "main.d54fd457.css.map": "/lyntric/static/css/main.d54fd457.css.map",
-    "main.82827c4b.js.map": "/lyntric/static/js/main.82827c4b.js.map"
+    "main.518df9e7.css.map": "/lyntric/static/css/main.518df9e7.css.map",
+    "main.ef24da12.js.map": "/lyntric/static/js/main.ef24da12.js.map"
   },
   "entrypoints": [
-    "static/css/main.d54fd457.css",
-    "static/js/main.82827c4b.js"
+    "static/css/main.518df9e7.css",
+    "static/js/main.ef24da12.js"
   ]
 }
