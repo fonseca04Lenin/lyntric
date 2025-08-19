@@ -46,11 +46,85 @@ const Pricing: React.FC = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          {/* Founding Member Tier */}
+          {/* Free Tier */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            className="border border-gray-700 p-8 rounded-xl"
+          >
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold mb-4 text-white">Free Tier</h3>
+              <div className="mb-4">
+                <span className="text-5xl font-black text-white">$0</span>
+                <span className="text-white ml-2">always free</span>
+              </div>
+              <p className="text-white text-sm">
+                Perfect for exploring the platform
+              </p>
+            </div>
+
+            <div className="space-y-4 mb-8">
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="text-sm text-white">Basic profile creation</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="text-sm text-white">Browse member directory</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="text-sm text-white">Limited messaging (5/month)</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="text-sm text-white">Access to public events</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="text-sm text-white">Community forums access</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="text-sm text-white">Basic AI matching</span>
+              </div>
+            </div>
+
+            <button className="w-full border border-white text-white py-3 font-semibold hover:bg-white hover:text-black transition-all duration-300 rounded-xl">
+              Join Free
+            </button>
+          </motion.div>
+
+          {/* Founding Member Tier */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             className="border-2 border-white p-8 relative rounded-xl"
           >
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -123,80 +197,6 @@ const Pricing: React.FC = () => {
 
             <button className="w-full bg-white text-black py-3 font-semibold hover-glow transition-all duration-300 rounded-xl">
               Request Invitation
-            </button>
-          </motion.div>
-
-          {/* Free Tier */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="border border-gray-700 p-8 rounded-xl"
-          >
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold mb-4 text-white">Free Tier</h3>
-              <div className="mb-4">
-                <span className="text-5xl font-black text-white">$0</span>
-                <span className="text-white ml-2">always free</span>
-              </div>
-              <p className="text-white text-sm">
-                Perfect for exploring the platform
-              </p>
-            </div>
-
-            <div className="space-y-4 mb-8">
-              <div className="flex items-center space-x-3">
-                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="text-sm text-white">Basic profile creation</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="text-sm text-white">Browse member directory</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="text-sm text-white">Limited messaging (5/month)</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="text-sm text-white">Access to public events</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="text-sm text-white">Community forums access</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="text-sm text-white">Basic AI matching</span>
-              </div>
-            </div>
-
-            <button className="w-full border border-white text-white py-3 font-semibold hover:bg-white hover:text-black transition-all duration-300 rounded-xl">
-              Join Free
             </button>
           </motion.div>
         </div>

@@ -81,64 +81,52 @@ const ProductFeatures: React.FC = () => {
   ];
 
   return (
-    <section id="features" ref={ref} className="py-20 lg:py-32">
+    <section id="features" ref={ref} className="py-16 sm:py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-20"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8">
-            <span className="text-white">PRODUCT OVERVIEW</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6">
+            <span className="text-white leading-tight">PRODUCT OVERVIEW</span>
           </h2>
-          <p className="text-xl text-white max-w-3xl mx-auto">
-            Every feature is precision-built for execution. No unnecessary complexity, 
-            just the tools you need to build faster and better—together.
+          <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed px-4">
+            Precision-built tools for execution. No complexity, just what you need to build better—together.
           </p>
         </motion.div>
 
-        <div className="space-y-16">
+        <div className="space-y-12 sm:space-y-16">
           {features.map((feature, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.8, delay: 0.1 * index }}
-              className={`grid lg:grid-cols-2 gap-12 items-center ${
-                index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
-              }`}
+              className="max-w-4xl mx-auto bg-gray-900/30 backdrop-blur-sm border border-gray-800/50 rounded-2xl p-6 sm:p-8"
             >
-              <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white">
-                  {feature.title}
-                </h3>
-                <p className="text-lg text-white mb-8 leading-relaxed">
-                  {feature.description}
-                </p>
-                
-                <div className="space-y-3">
-                  {feature.highlights.map((highlight, highlightIndex) => (
-                    <div key={highlightIndex} className="flex items-center space-x-3">
-                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <p className="text-white text-sm">{highlight}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-white leading-tight">
+                {feature.title}
+              </h3>
+              <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed">
+                {feature.description}
+              </p>
               
-              <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                <div className="border border-gray-800 p-8 h-64 flex items-center justify-center rounded-xl">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-white to-gray-400 mx-auto mb-4" />
-                    <p className="text-white text-sm">Feature Preview</p>
+              <div className="space-y-3 sm:space-y-4">
+                {feature.highlights.map((highlight, highlightIndex) => (
+                  <div key={highlightIndex} className="flex items-start space-x-3">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{highlight}</p>
                   </div>
-                </div>
+                ))}
               </div>
+
             </motion.div>
           ))}
         </div>

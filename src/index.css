@@ -8,16 +8,23 @@
   box-sizing: border-box;
 }
 
+/* Prevent horizontal scroll on mobile */
+*, *::before, *::after {
+  max-width: 100%;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #000000;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .gradient-text {
